@@ -1,4 +1,4 @@
-# ember-symbol-observable [![Build Status](https://travis-ci.org/mike-north/ember-symbol-observer.svg?branch=master)](https://travis-ci.org/mike-north/ember-symbol-observer)
+# ember-symbol-observable [![Build Status](https://travis-ci.org/mike-north/ember-symbol-observable.svg?branch=master)](https://travis-ci.org/mike-north/ember-symbol-observable)
 
 A simple polyfill for [symbol-observable](https://github.com/blesh/symbol-observable).
 
