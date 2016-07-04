@@ -13,7 +13,7 @@ module.exports = {
     var soTree = stew.find(soPath, {
       include: ['**/*.js']
     });
-    var trees = mergeTrees([tree, soTree], {overwrite: true});
+    var trees = tree ? mergeTrees([tree, soTree]) : soTree;
   	return this._super.treeForAddon.call(this, trees);
   }
 };
