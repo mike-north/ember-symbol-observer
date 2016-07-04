@@ -9,7 +9,7 @@ module.exports = {
   name: 'symbol-observable',
   
   treeForAddon: function(tree) {
-  	var soPath = path.dirname(require.resolve('symbol-observable/es/index.js'));
+  	var soPath = path.dirname(require.resolve('symbol-observable/index.js')) + '/es';
     var soTree = stew.find(soPath, {
       include: ['**/*.js']
     });
