@@ -1,7 +1,7 @@
 {
   "name": "ember-symbol-observable",
   "version": "0.1.1",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Add symbol-observable to your Ember.js app",
   "directories": {
     "doc": "doc",
     "test": "tests"
