@@ -1,6 +1,6 @@
-# Ember-symbol-observable
+# ember-symbol-observable
 
-This README outlines the details of collaborating on this Ember addon.
+A simple polyfill for [symbol-observable](https://github.com/blesh/symbol-observable).
 
 ## Installation
 
