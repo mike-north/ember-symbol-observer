@@ -11,12 +11,11 @@
     "start": "ember server",
     "test": "ember try:each"
   },
-  "repository": "",
+  "repository": "https://github.com/mike-north/ember-symbol-observable",
   "engines": {
     "node": ">= 0.10.0"
   },
-  "author": "",
-  "license": "MIT",
+  "author": "Mike North <michael.l.north@gmail.com> (http://mike.works)",  "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "ember-ajax": "^2.0.1",

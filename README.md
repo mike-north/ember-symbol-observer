@@ -3,6 +3,19 @@
 A simple polyfill for [symbol-observable](https://github.com/blesh/symbol-observable).
 
 ## Installation
+You may install this addon with ember-cli
+
+```sh
+ember install ember-symbol-observable
+```
+
+and then import symbol-observable as an ES6 module
+
+```js
+import so from 'symbol-observable';
+```
+
+## Contributing
 
 * `git clone` this repository
 * `npm install`
