@@ -1,10 +1,14 @@
+---
 language: node_js
 node_js:
-- '4'
+  - "6"
+
+dist: trusty
 sudo: false
+
 cache:
-  directories:
-  - node_modules
+  yarn: true
+
 env:
 - EMBER_TRY_SCENARIO=default
 - EMBER_TRY_SCENARIO=ember-1.13
@@ -15,15 +19,21 @@ matrix:
   fast_finish: true
   allow_failures:
   - env: EMBER_TRY_SCENARIO=ember-canary
+
 before_install:
-- npm config set spin false
-- npm install -g bower
-- npm install phantomjs-prebuilt
+  - curl -o- -L https://yarnpkg.com/install.sh | bash
+  - export PATH=$HOME/.yarn/bin:$PATH
+  - yarn global add phantomjs-prebuilt
+  - phantomjs --version
+
 install:
-- npm install
-- bower install
+  - yarn install --no-lockfile
+
 script:
-- ember try $EMBER_TRY_SCENARIO test --skip-cleanup
+  # Usually, it's ok to finish the test scenario without reverting
+  #  to the addon's original dependency state, skipping "cleanup".
+  - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
+
 deploy:
   provider: heroku
   api_key:
