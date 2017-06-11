@@ -33,11 +33,3 @@ script:
   # Usually, it's ok to finish the test scenario without reverting
   #  to the addon's original dependency state, skipping "cleanup".
   - node_modules/.bin/ember try:one $EMBER_TRY_SCENARIO test --skip-cleanup
-
-deploy:
-  provider: heroku
-  api_key:
-    secure: aD5E4NmJQCDnGjQpfs3LgUFY7mpAUrRCy3UEUYkOF0wzzYbynXhIqSZcdIvBwBAF2pw6XVgxyA7eCeBMqczIci5G2AeXdE/Gwmgy/SKSgJaPNEz20vwDbRjszaQEKF256T581t55AwLE6RECxT/D4+I8SM7mtqe7ZpDjjCuekj5oemCkd/bfJsMWVL9WkvPoCFPFnvW5VjoX92gZOKUVmdamBRKytJg9hHwjfFMnEtzBX9k2iQ6qF3M8Smd5yMrkwvOhD5+llX+Me9K84FgOgxPvYcwtJWyPQwKZBpTp9QbWhnbWBcOwlxTBn5TZHfzA9S5ZUuK4WN+wa6AJXxy//cIYoMfqaAf+jnw98R6OCU9sDlcHwUN+5OZqpSiH4wXN08Ebb9PQSAXqAxR1nLANkIJJ8E190QJcAd9dLiFw3gt8yJ2oFGEY1ZetIv+p11ndt94aQPU6qIV5UNhBSUreKO5Haa+Nc4Fqx2pyjCnCL1RPE0HrfkknvD5B+ESALtdb0sZZUWqdkYd/e7SIUHxtqfe33oVG33uu31Aab1/2vNf76S7S4yzdCbxpjpaC9HYGwYrqtRgeuNbAZ3tUzJM0kJK1l2htIdaPaxTOo2JxJGpnBL4b3RVdzRno8f+InvYBrREOK+LiIJx/mEGR45MjpCq5ve/9SI1RPcu96mJrDNM=
-  app: ember-symbol-observable-demo
-  on:
-    repo: mike-north/ember-symbol-observable
