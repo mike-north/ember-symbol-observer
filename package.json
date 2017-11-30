@@ -1,6 +1,6 @@
 {
   "name": "ember-symbol-observable",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Add symbol-observable to your Ember.js app",
   "directories": {
     "doc": "doc",
