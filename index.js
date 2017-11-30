@@ -1,19 +1,26 @@
 /* jshint node: true */
 var mergeTrees = require('broccoli-merge-trees');
-var stew = require('broccoli-stew');
+var replace = require('broccoli-replace');
 var path = require('path');
 
 'use strict';
 
 module.exports = {
   name: 'symbol-observable',
-  
+
   treeForAddon: function(tree) {
-  	var soPath = path.dirname(require.resolve('symbol-observable/index.js')) + '/es';
-    var soTree = stew.find(soPath, {
-      include: ['**/*.js']
+    var soPath = path.dirname(require.resolve('symbol-observable/es/index.js'));
+    var soTree = this.treeGenerator(soPath);
+    soTree = replace(soTree, {
+      files: '**/*.js',
+      patterns: [
+        {
+          match: /from '([^']+)\.js'/g,
+          replacement: "from '$1'"
+        }
+      ]
     });
     var trees = tree ? mergeTrees([tree, soTree]) : soTree;
-  	return this._super.treeForAddon.call(this, trees);
+    return this._super.treeForAddon.call(this, trees);
   }
 };

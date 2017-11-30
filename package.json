@@ -46,7 +46,7 @@
   ],
   "dependencies": {
     "broccoli-merge-trees": "^2.0.0",
-    "broccoli-stew": "^1.4.2",
+    "broccoli-replace": "^0.12.0",
     "ember-cli-babel": "^6.1.0",
     "symbol-observable": "^1.0.4"
   },
