@@ -1,5 +1,7 @@
 # ember-symbol-observable [![Build Status](https://travis-ci.org/mike-north/ember-symbol-observable.svg?branch=master)](https://travis-ci.org/mike-north/ember-symbol-observable)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/mike-north/ember-symbol-observable.svg)](https://greenkeeper.io/)
+
 A simple polyfill for [symbol-observable](https://github.com/blesh/symbol-observable).
 
 ## Installation
