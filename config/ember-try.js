@@ -1,20 +1,31 @@
-/*jshint node:true*/
 module.exports = {
+  useYarn: true,
   scenarios: [
-    {
-      name: 'default',
-      bower: {
-        dependencies: { }
-      }
-    },
     {
       name: 'ember-1.13',
       bower: {
         dependencies: {
-          'ember': '~1.13.0'
+          ember: '~1.13.0'
         },
         resolutions: {
-          'ember': '~1.13.0'
+          ember: '~1.13.0'
+        }
+      }
+
+    },
+    {
+      name: 'ember-lts-2.12',
+      npm: {
+        devDependencies: {
+          'ember-source': '~2.12.0'
+        }
+      }
+    },
+    {
+      name: 'ember-lts-2.16',
+      npm: {
+        devDependencies: {
+          'ember-source': '~2.16.0'
         }
       }
     },
@@ -22,10 +33,15 @@ module.exports = {
       name: 'ember-release',
       bower: {
         dependencies: {
-          'ember': 'components/ember#release'
+          ember: 'components/ember#release'
         },
         resolutions: {
-          'ember': 'release'
+          ember: 'release'
+        }
+      },
+      npm: {
+        devDependencies: {
+          'ember-source': null
         }
       }
     },
@@ -33,10 +49,15 @@ module.exports = {
       name: 'ember-beta',
       bower: {
         dependencies: {
-          'ember': 'components/ember#beta'
+          ember: 'components/ember#beta'
         },
         resolutions: {
-          'ember': 'beta'
+          ember: 'beta'
+        }
+      },
+      npm: {
+        devDependencies: {
+          'ember-source': null
         }
       }
     },
@@ -44,11 +65,22 @@ module.exports = {
       name: 'ember-canary',
       bower: {
         dependencies: {
-          'ember': 'components/ember#canary'
+          ember: 'components/ember#canary'
         },
         resolutions: {
-          'ember': 'canary'
+          ember: 'canary'
         }
+      },
+      npm: {
+        devDependencies: {
+          'ember-source': null
+        }
+      }
+    },
+    {
+      name: 'ember-default',
+      npm: {
+        devDependencies: {}
       }
     }
   ]
