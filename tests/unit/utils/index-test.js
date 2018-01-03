@@ -5,6 +5,6 @@ import { module, test } from 'qunit';
 module('Unit | Utility | index');
 
 test('it works', function(assert) {
-  assert.equal(typeof so, 'string');
+  assert.ok(['string', 'symbol'].indexOf(typeof so) >= 0);
   assert.equal(typeof sop, 'function');
 });
