@@ -1,6 +1,6 @@
 /* jshint node: true */
 var mergeTrees = require('broccoli-merge-trees');
-var replace = require('broccoli-replace');
+var replace = require('broccoli-string-replace');
 var path = require('path');
 
 'use strict';
@@ -12,7 +12,7 @@ module.exports = {
     var soPath = path.dirname(require.resolve('symbol-observable/es/index.js'));
     var soTree = this.treeGenerator(soPath);
     soTree = replace(soTree, {
-      files: '**/*.js',
+      files: ['**/*.js'],
       patterns: [
         {
           match: /from '([^']+)\.js'/g,
