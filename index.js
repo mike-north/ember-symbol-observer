@@ -3,10 +3,10 @@ var mergeTrees = require('broccoli-merge-trees');
 var replace = require('broccoli-string-replace');
 var path = require('path');
 
-'use strict';
+('use strict');
 
 module.exports = {
-  name: 'symbol-observable',
+  name: require('./package').name,
 
   treeForAddon: function(tree) {
     var soPath = path.dirname(require.resolve('symbol-observable/es/index.js'));
