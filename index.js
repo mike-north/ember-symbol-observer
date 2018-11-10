@@ -6,7 +6,7 @@ var path = require('path');
 ('use strict');
 
 module.exports = {
-  name: require('./package').name,
+  name: 'symbol-observable',
 
   treeForAddon: function(tree) {
     var soPath = path.dirname(require.resolve('symbol-observable/es/index.js'));
