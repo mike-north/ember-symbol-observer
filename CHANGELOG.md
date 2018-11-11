@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/mike-north/ember-symbol-observable/compare/v1.0.3...v1.0.4) (2018-11-11)
+
+
+### Bug Fixes
+
+* test ember-canary in CI ([a34adae](https://github.com/mike-north/ember-symbol-observable/commit/a34adae))
+
 ## [1.0.3](https://github.com/mike-north/ember-symbol-observable/compare/v1.0.2...v1.0.3) (2018-11-10)
 
 
