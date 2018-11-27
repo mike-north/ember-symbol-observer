@@ -20,8 +20,8 @@
     "@commitlint/config-conventional": "7.1.2",
     "@commitlint/travis-cli": "7.2.1",
     "@ember/optional-features": "0.7.0",
-    "@mike-north/js-lib-renovate-config": "^0.0.1",
-    "@mike-north/js-lib-semantic-release-config": "^0.0.0-development",
+    "@mike-north/js-lib-renovate-config": "0.0.1",
+    "@mike-north/js-lib-semantic-release-config": "0.0.0-development",
     "broccoli-asset-rev": "3.0.0",
     "broccoli-stew": "2.0.1",
     "ember-cli-dependency-checker": "3.0.0",
@@ -46,8 +46,8 @@
     "eslint-plugin-node": "8.0.0",
     "husky": "1.2.0",
     "loader.js": "4.7.0",
-    "semantic-release": "^15.10.8",
-    "travis-deploy-once": "^5.0.9",
+    "semantic-release": "15.10.8",
+    "travis-deploy-once": "5.0.9",
     "qunit-dom": "0.8.1"
   },
   "keywords": [
