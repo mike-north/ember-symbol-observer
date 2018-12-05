@@ -1,3 +1,10 @@
+## [1.0.6](https://github.com/mike-north/ember-symbol-observable/compare/v1.0.5...v1.0.6) (2018-12-05)
+
+
+### Bug Fixes
+
+* **deps:** update dependency broccoli-merge-trees to v3 ([58301dd](https://github.com/mike-north/ember-symbol-observable/commit/58301dd))
+
 ## [1.0.5](https://github.com/mike-north/ember-symbol-observable/compare/v1.0.4...v1.0.5) (2018-11-27)
 
 
